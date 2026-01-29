@@ -17,7 +17,7 @@ const taskSchema = new mongoose.Schema({
   },
   estado: {
     type: Boolean,
-    default: true // true = pendiente, false = completada
+   
   },
   fecha: {
     type: Date,

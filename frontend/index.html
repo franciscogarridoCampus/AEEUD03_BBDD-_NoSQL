@@ -16,12 +16,24 @@
       <div class="form-group">
         <input type="text" id="titulo" placeholder="Título de la tarea">
         <input type="text" id="tecnologia" placeholder="Tecnología (JS, Java...)">
+        <select id="estado">
+          <option value="true" selected>Pendiente</option>
+          <option value="false">Finalizada</option>
+        </select>
         <button id="btnGuardar">Guardar tarea</button>
       </div>
     </section>
 
-    <section class="list-container">
-      <ul id="listaTareas"></ul>
+    <section class="tables-container">
+      <div class="tabla">
+        <h2>Pendientes</h2>
+        <ul id="listaPendientes"></ul>
+      </div>
+
+      <div class="tabla">
+        <h2>Finalizadas</h2>
+        <ul id="listaFinalizadas"></ul>
+      </div>
     </section>
   </main>
 
